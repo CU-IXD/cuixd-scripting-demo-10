@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Example 1</title>
+  <link type="text/css" rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" />
+  <style>
+    .panel-heading:after {
+      clear:both;
+      display: block;
+      content:"";
+    }
+    .panel-title {
+      padding-left:0;
+    }
+  </style>
+</head>
+
+<body class="container">
+
+  <header id="masthead" class="jumbotron">
+    <h1>Example File</h1>
+    <p>Deciding whether or not to decide</p>
+  </header>
+  <main class="row">
+    <div id="shopping-list" class="shopping-list col-sm-6">
+      <div class="alert alert-info">
+        <p id="list-msg"></p>
+      </div>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">Shopping List</h2>
+        </div>
+        <div class="panel-body">
+          <form id="add-item-form">
+            <div class="input-group">
+              <input id="new-item" name="new-item" class="form-control" type="text" placeholder="Add item..." />
+              <span class="input-group-btn">
+                <button class="btn btn-success" type="submit">Add</button>
+              </span>
+            </div>
+          </form>
+          <ul class="list-group">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
